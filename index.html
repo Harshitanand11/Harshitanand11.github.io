@@ -1,111 +1,191 @@
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Online Responsive Resume Demo</title>
-  <meta name="author" content="Jake Rocheleau">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="HandheldFriendly" content="true">
-  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="responsive.css">
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <![endif]-->
-</head>
+<!DOCTYPE html>
+<html id="index" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Harshit Anand</title>
+		<meta name="description" content="Portfolio for Harshit Anand - APP Developer">
+		<link href="css/styles.css" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="pictures/gamer.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="pictures/gamer32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="pictures/gamer16x16.png">
+		<link rel="manifest" href="pictures/site.webmanifest">
+	</head>
+	<body>
+<div class="helloHere">
 
-<body>
-	<div id="w" itemscope itemtype="http://schema.org/Person">
-		<header class="clearfix">
-			<div id="info">			
-				<h1><span itemprop="name">Jake Rocheleau</span></h1>
-				<h3><span itemprop="jobTitle">Freelance Writer &amp; Web Developer</span></h3>
-				<small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				  <span itemprop="addressLocality">Hudson</span>, 
-				  <span itemprop="addressRegion">Massachusetts</span>, 
-				  <span itemprop="addressCountry">USA</span>
-				</small>
-				<small><span itemprop="email">jakerocheleau@gmail.com</span></small>
-				<small><a href="http://byjakewithlove.com/" itemprop="url">My Portfolio</a> &bull; <a href="http://twitter.com/jakerocheleau" itemprop="url">@jakerocheleau</a></small>
+	<div class="hereName">
+		<h1 class="hello">Hello There!</h1>
+		<div >
+			<p class="introduction">Welcome to my portfolio website! I'm <strong>Abhiyankar Shakti</strong>, an enthusiastic game programmer from India with a few projects under my belt and looking to create more!</p>
+			<div>
+				<button class="button_custom" onclick=" window.open('https://drive.google.com/file/d/1MeeR0CmoePyP4vFxnZNo-mhaBAAwL5z1/view?usp=sharing','_blank')"> View Resume</button>
+
+			<!-- <button class="button_custom" onclick=" window.open('https://abhishakti123.itch.io/','_blank')"> Open itch</button> -->
+
 			</div>
-			
-			<div id="photo">
-				<img src="images/jake-rocheleau-250.jpg" alt="Jake Rocheleau resume photo avatar" itemprop="image" />
-			</div>
-		</header>
-		
-		<section id="profile">
-			<h2>My History &amp; Profile</h2>
-			<p itemprop="description">I'm a 21 year old web designer and developer working out of eastern Massachusetts. I have been coding websites ever since sophomore year of high school in my first web design class. Fast-forward a few years later I was landing freelance projects most of my junior and senior years. During this time I was also working part-time at Best Buy's Geek Squad division.</p>
-			
-			<p>After graduating High School in summer 2009 I started writing on various web design blogs along with launching my own startup ideas. A few months later in September 2009 I spent a couple months studying at <a href="http://www.wpi.edu/">Worcester Polytechnic Institute</a> in Worcester, Massachsuetts. However I left in January 2010 to pursue a career on my own. I now work doing freelance writing and building side-projects in my spare time.</p>
-		</section>
-		
-		<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
-			<h2 itemprop="name">Skillset</h2>
-			<section id="skills-left">
-				<h4 itemprop="about">Development</h4>
-				<ul>
-					<li itemprop="itemListElement">HTML5/CSS3</li>
-					<li itemprop="itemListElement">JavaScript &amp; jQuery</li>
-					<li itemprop="itemListElement">PHP Backend</li>
-					<li itemprop="itemListElement">SQL Databases</li>
-					<li itemprop="itemListElement">Wordpress</li>
-					<li itemprop="itemListElement">Pligg CMS</li>
-					<li itemprop="itemListElement">Some Objective-C</li>
-				</ul>
-			</section>
-			
-			<section id="skills-right">
-				<h4 itemprop="about">Software</h4>
-				<ul>
-					<li itemprop="itemListElement">Adobe Photoshop</li>
-					<li itemprop="itemListElement">Adobe Dreamweaver</li>
-					<li itemprop="itemListElement">MS Office 2007-2010</li>
-					<li itemprop="itemListElement">cPanel &amp; phpMyAdmin</li>
-					<li itemprop="itemListElement">Xcode 4</li>
-				</ul>
-			</section>
-		</section>
-		
-		<section id="education">
-			<h2>Past Education</h2>
-			<p><span itemprop="alumniOf">Hudson High School</span> graduate of 2009.</p>
-		</section>
-		
-		<section id="experience">
-			<h2>Work Experience</h2>
-			<p>Freelance Web Designer/Developer ~ 2007-2009</p>
-			<p>Best Buy - Geek Squad In-Store Agent ~ 2008-2009</p>
-			<p>Freelance Writer for <span itemprop="worksFor">Hongkiat.com</span> ~ 2011-Present</p>
-		</section>
-		
-		<section id="articles">
-			<h2>Recent Articles</h2>
-			<p itemscope itemtype="http://schema.org/Article">
-			<span itemprop="name">
-			<a href="http://www.hongkiat.com/blog/css-javascript-fallback-methods/" itemprop="url" title="10 Useful Fallback Methods For CSS And Javascript">10 Useful Fallback Methods For CSS And Javascript</a></span> &bull; Published in <span itemprop="datePublished">July 2012</span></p>
-			
-			<p itemscope itemtype="http://schema.org/Article">
-			<span itemprop="name">
-			<a href="http://www.hongkiat.com/blog/wordpress-url-rewrite/" itemprop="url" title="Rewriting URLs In WordPress: Tips And Plugins">Rewriting URLs In WordPress: Tips And Plugins</a></span> &bull; Published in <span itemprop="datePublished">July 2012</span></p>
-			
-			<p itemscope itemtype="http://schema.org/Article">
-			<span itemprop="name">
-			<a href="http://www.hongkiat.com/blog/jpeg-optimization-guide/" itemprop="url" title="JPEG Optimization For The Web – Ultimate Guide">JPEG Optimization For The Web – Ultimate Guide</a></span> &bull; Published in <span itemprop="datePublished">July 2012</span></p>
-			
-			<p itemscope itemtype="http://schema.org/Article">
-			<span itemprop="name">
-			<a href="http://www.hongkiat.com/blog/design-perfect-newsletter/" itemprop="url" title="9 Tricks To Design The Perfect HTML Newsletter">9 Tricks To Design The Perfect HTML Newsletter</a></span> &bull; Published in <span itemprop="datePublished">May 2012</span></p>
-			
-			<p itemscope itemtype="http://schema.org/Article">
-			<span itemprop="name">
-			<a href="http://www.hongkiat.com/blog/google-website-optimizer-ab-testing-guide/" itemprop="url" title="Guide To A/B Testing With Google Website Optimizer">Guide To A/B Testing With Google Website Optimizer</a></span> &bull; Published in <span itemprop="datePublished">March 2012</span></p>
-		</section>
+		</div>
+	</div>
+
+	<div>
+		<img class="first_pic" src="pictures/me.png" alt="My logo">
 
 	</div>
-</body>
+
+</div>
+
+		<!-- <div>
+			<h1 class="hello">Hello There!</h1>
+			<div>
+				<img class="first_pic" src="pictures/me.png" alt="My logo">
+				<p class="introduction">Welcome to my portfolio website! I'm <strong>Abhiyanakar Shakti</strong>, an enthusiastic game programmer from India with a few projects under my belt and looking to create more!</p>
+			</div>
+		</div> -->
+
+		<div class="aboutDiv">
+			<h4 class="side_header">About me</h4>
+			<p class="plain_text">I am a game programmer who is currently pursuing B.Tech with a dream of becoming a part of something special in the gaming industry. I love videogames: as a career and as a hobby.
+			<br><br>I started my adventure at my freshman year in <b>Kalinga Institute of Industrial Technology</b> as a Computer Science Engineer (<b>Bachelor's degree</b>, about to graduate at the mid of <b>2024</b>).
+			<br><br>I am currently a Junior.
+		</div>
+		<div>
+			<h4 class="side_header">Work Experience</h4>
+			<ul class="skill_list plain_text">
+				<li><p style="font-size: 170%; color: rgb(235, 214, 75); margin-bottom: 19px;
+					margin-top: 1px;">KRAYTON GAMING</p> January 2023 - Till Today</li>
+				<li>• Working as a Game Developer Intern on an unannounced project using Unity.</li>
+				<li>• Implemented various gameplay mechanics through code and editor.</li>		
+			</ul>
+		</div>
+		<div>
+			<h4 class="side_header">Certifications</h4>
+			<ul class="skill_list plain_text">
+				<li>Electronic Arts Software Engineering Virtual Experience Program</li>
+				<li>Goldman Sachs FinTech Engineering Virtual Experience Program</li>
+				<li>Problem Solving (Intermediate) Certificate</li>
+				<li>Problem Solving (Basic) Certificate</li>	
+			</ul>
+		</div>
+		<div>
+			<h4 class="side_header">Education</h4>
+			<ul class="skill_list plain_text">
+				<li>Kalinga Institute of Industrial Technology, Comuter Science and System Engineering. September 2020 - Present</li>
+				<li>Narayana Junior College. March 2018 - March 2020</li>		
+			</ul>
+		</div>
+		<div>
+			<h4 class="side_header">Skills</h4>
+			<p class="plain_text">The ones in bold are my specialities</p>
+			<div class="skills">
+				<div class="plain_text_list">
+					<ul class="skill_list">
+						<h4 class="list_header">Languages</h4>
+						<li><b>Engish - Professional</b></li>
+						<li><b>Hindi - Excellent</b></li>
+						<li>Spanish - Few words, don't ask why</li>
+					</ul>
+				</div>
+				<div class="plain_text_list">
+					<ul class="skill_list">
+						<h4 class="list_header">More important languages</h4>
+						<li><b>C/C++</b></li>
+						<li><b>C#</b></li>
+						<li><b>GLSL/HLSL</b></li>
+						<li>Python</li>
+					</ul>
+				</div>
+				<div class="plain_text_list">
+					<ul class="skill_list">
+						<h4 class="list_header">Useful tools</h4>
+						<li><b><a class="link" href="https://unrealengine.com/" target="_blank">Unreal Engine</a></b></li>
+						<li><b><a class="link" href="https://unity.com/" target="_blank">Unity</a></b></li>
+						<li><b><a class="link" href="https://git-scm.com/" target="_blank">Git</a></b></li>
+						<li><a class="link" href="https://github.com/" target="_blank">GitHub</a></li>
+						<li><a class="link" href="https://www.opengl.org/" target="_blank">OpenGL (GLSL)</a></li>
+						<li>DirectX</a></li>
+						<li><b><a class="link" href="https://www.adobe.com/in/products/photoshop.html" target="_blank">Photoshop</a></b></li>
+						<li><b><a class="link" href="https://www.adobe.com/in/products/animate.html" target="_blank">Adobe Animate</a></b></li>
+						<li><a class="link" href="https://trello.com/" target="_blank">Trello</a></li>
+					</ul>
+				</div>
+				<div class="plain_text_list">
+					<ul class="skill_list">
+						<h4 class="list_header">Proficiencies</h4>
+						<li><b>Algorithms</b></li>
+						<li><b>Gameplay Programming</b></li>
+						<li><b>Level Designing</b></b></li>
+						<li><b>Blueprints</b></li>
+						<li><b>Shaders</b></li>
+						<li><b>2D Animation</b></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h4 class="side_header">My biggest projects (from biggest to the smallest)</h4>.
+			<div class="project">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Kr-kDqwFntk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p class="plain_text project_text showreel_text">Here is a little preview video of my projects so far. More details about the projects and links to the source codes below.</p>
+			</div>
+			
+			<div class="project">
+				<a href="https://mizukigames.itch.io/victorian-railway" target="_blank"><img width="560" height="315" src="pictures/Victorian.png" alt="Medieval Level"></a>
+				<div>
+					<a href="https://mizukigames.itch.io/victorian-railway" target="_blank"><h3 class="plain_text link">Victorian Railway</h3></a></p>
+					<p class="plain_text project_text"> A game made using Unity for a game jam along with a team of game designer and a 3D artist. Implemented the train movement system, the in-game camera for the game, along with working on the other mechanics for the game with the team.
+				</div>
+			</div>
+			<div class="project">
+				<a href="https://abhishakti123.itch.io/nostophobia" target="_blank"><img width="560" height="315" src="pictures/Nostophobia.png" alt="Nostophobia"></a>
+				<div>
+					<a href="https://abhishakti123.itch.io/nostophobia" target="_blank"><h3 class="plain_text link">A Simple Medieval Game</h3></a></p>
+					<p class="plain_text project_text"> A 2D platformer narrative style game built using Unity, implemented the combat mechanics and also programmed the UI and the dialogue system for the game.
+				</div>
+			</div>
+			<div class="project">
+				<a href="https://github.com/Abhiyankar/UnrealMedieval" target="_blank"><img width="560" height="315" src="pictures/Medi.png" alt="Medieval Level"></a>
+				<div>
+					<a href="https://github.com/Abhiyankar/UnrealMedieval" target="_blank"><h3 class="plain_text link">A Simple Medieval Game</h3></a></p>
+					<p class="plain_text project_text"> A simple game made in Unreal Engine, with the goal of getting familiar with the Unreal C++ and creating a simple combat system.
+				</div>
+			</div>
+			<div class="project">
+				<a href="https://github.com/Abhiyankar/HackNSlashCyborg" target="_blank"><img width="560" height="315" src="pictures/cyborg.png" alt="Cyborg Image"></a>
+				<div>
+					<a href="https://github.com/Abhiyankar/HackNSlashCyborg" target="_blank"><h3 class="plain_text link">HackNSlashCyborg</h3></a>
+					<p class="plain_text project_text"> A Top Down HackNSlash game built to understand the OOP concept of C++ and explore SDL2 Library.</p>
+				</div>
+			</div>
+			<div class="project">
+				<a href="https://github.com/Abhiyankar/OpenGL" target="_blank"><img width="560" height="315" src="pictures/opengl.png" alt="OpenGL Image"></a>
+				<div>
+					<a href="https://github.com/Abhiyankar/OpenGL" target="_blank"><h3 class="plain_text link">OpenGL Project</h3></a>
+					<p class="plain_text project_text"> A project made to understand the graphics pipeline, and various things like lighting, mesh rendering and skybox.</p>
+				</div>
+			</div>
+			<div class="project">
+				<a href="https://github.com/Abhiyankar/PacSFML" target="_blank"><img width="560" height="315" src="pictures/pac.png" alt="Pacman Image"></a>
+				<div>
+					<a href="https://github.com/Abhiyankar/PacSFML" target="_blank"><h3 class="plain_text link">Pacman</h3></a>
+					<p class="plain_text project_text"> A simple pacman clone created with the purpose of understanding how to write simple AI and also to explore SFML library.</p>
+				</div>
+			</div>
+			<div class="project">
+				<a href="https://github.com/Abhiyankar/Tetris-DxD2" target="_blank"><img width="560" height="315" src="pictures/tetris.png" alt="Tetris Image"></a>
+				<div>
+					<a href="https://github.com/Abhiyankar/Tetris-DxD2" target="_blank"><h3 class="plain_text link">Tetris</h3></a>
+					<p class="plain_text project_text"> A Tetris clone made with the purpose of exploring DirectX Graphics API.</p>
+				</div>
+			</div>
+		</div>
+
+		<p class="plain_text">These, and other projects can be found on my <a href="https://github.com/Abhiyankar/" target="_blank" class="link">GitHub</a>. Thank you for checking out my page! I hope you found it interesting :)</p>
+		<footer class="footer">
+			<span>Site made by Abhiyankar Shakti  -  
+				<a href="mailto:abhi.shakti123@gmail.com" target"_blank" class="link"><b>abhi.shakti123@gmail.com</b></a>  -  
+				<a href="https://github.com/Abhiyankar/" target="_blank" class="link"><b>GitHub</b></a>  -  
+				<a href="https://www.linkedin.com/in/abhiyankar-shakti-43743923b/" target="_blank" class="link"><b>LinkedIn</b></a>
+			</span>
+		</footer>
+	</body>
 </html>
